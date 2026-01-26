@@ -12,6 +12,11 @@ data class Item(
         return "Id предмета: $id\nИмя: $name\nКоличество: $quantity\n"
     }
 }
+abstract class Human(val name: String){
+    abstract var age: Int
+    abstract fun hello()
+
+}
 
 fun main() {
 //    println(age) // 18
@@ -25,4 +30,16 @@ fun main() {
 //    println(betterSword.toString())
 //    val(id,name,quantity) = betterSword
 //    println("Id предмета: $id\nИмя: $name\nКоличество: $quantity\n")
+//    val pavel: Human = Human("Pavel")
+class Person(name: String, override  var age : Int): Human(name){
+    override fun hello(){
+        println("My name is $name")
+    }
+}
+    val denis: Person = Person("Denis",1)
+    val maksim: Human = Person("Maksim",2)
+    denis.hello()
+    maksim.hello()
+
+
 }
