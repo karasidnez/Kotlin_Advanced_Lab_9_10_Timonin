@@ -1,7 +1,10 @@
+import resources.OutpostResource
+import resources.ResourseManager
+
 fun main() {
     val manager = ResourseManager()
-    val minerals = OutpostResource(1,"Minerals",300)
-    val gas = OutpostResource(2,"Gas",100)
+    val minerals = OutpostResource(1, "Minerals", 300)
+    val gas = OutpostResource(2, "Gas", 100)
     manager.add(minerals)
     manager.add(gas)
     manager.printAll()

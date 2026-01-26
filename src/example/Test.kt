@@ -1,3 +1,5 @@
+package example
+
 var age: Int = 18
     set(value) {
         if ((value > 0) and (value < 110))
@@ -19,18 +21,18 @@ abstract class Human(val name: String){
 }
 
 fun main() {
-//    println(age) // 18
-//    age = 45
-//    println(age) // 45
-//    age = -345
-//    println(age) // 45
-//    val sword = Item(1,"Sword", 1)
+//    println(example.age) // 18
+//    example.age = 45
+//    println(example.age) // 45
+//    example.age = -345
+//    println(example.age) // 45
+//    val sword = example.Item(1,"Sword", 1)
 //    val betterSword = sword.copy(quantity = 2)
 //    println(sword.toString())
 //    println(betterSword.toString())
 //    val(id,name,quantity) = betterSword
 //    println("Id предмета: $id\nИмя: $name\nКоличество: $quantity\n")
-//    val pavel: Human = Human("Pavel")
+//    val pavel: example.Human = example.Human("Pavel")
 class Person(name: String, override  var age : Int): Human(name){
     override fun hello(){
         println("My name is $name")
