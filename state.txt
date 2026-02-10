@@ -1,0 +1,2 @@
+Minerals=120
+Energy=70
